@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <!------------header-------------->
+    <div class="bg-black text-white font-sans">
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6jNtWDZWZtTY3kPJnxx12Ei_qZTXMyhlWRQYxck&s"
+                        class="logo h-24">
+                    <ul id="sidemenu">
+                       
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Work</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark flex ml-5 " onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Frontend Web Developer</p>
+                    <h1>Hi,I am <span>Oshani Sharma</span> From India</h1>
+                   
+                    <a href="https://drive.google.com/file/d/1n0fkdQ3D7sz0_fIgl_mgAcz5SsiTBodN/view?usp=sharing"
+                        class="btn btn2 w-46 h-26 cursor-pointer " target="_blank">Download CV</a>
+                </div>
+            </div>
+
+        </div>
+        <!-------------About------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img class="w-25 h-auto" src="./images/my-img.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class=" sub-title font-normal  text-lg md:text-7xl leading-none mb-8">About Me</h1>
+                        <p class="font-normal  text-md md:text-xl mb-8"> I'm <b>Oshani Sharma</b>, a dynamic Computer
+                            Science graduated in <strong>B.Voc in Software Development</strong> at <strong>Maharishi
+                            Dayanand University,Rohtak with First Division with Distinction</strong>. I have total 5 months of internship
+                            experience and recently I have completed 3 months as Frontend Developer Intern
+                            in <b>Startup "Ant Creatives"</b> where I have developed WeddingPe and Coromandel Cafe
+                            Website in <b>Reactjs, Javascript, Html, Css , Bootstrap , JSON</b>.<br> I am currently
+                            looking for a full-time position as a frontend developer.</p>
+
+                        <p class="font-normal  text-md md:text-xl mb-8">I have a passion for software. I enjoy creating
+                            tools that make life easier for people.<br> Let's connect and collaborate to elevate your
+                            team's success together.</p>
+                </div>
+                    <div class="mt-20">
+                        <div class="tab-titles cursor-pointer">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <!--skills-->
+                        <div class="tab-contents active-tab " id="skills">
+                            <ul class=" cursor-pointer ">
+                                <li><span>Html</span></li>
+                                <li><span>Css</span></li>
+                                <li><span>JavaScript</span></li>
+                                <li><span>React Framework</span></li>
+                                <li><span>NPM</span></li>
+                                <li><span>Tailwind</span></li>
+                                <li><span>Bootstrap</span></li>
+                                <li><span>JSON</span></li>
+                                <li><span>Git and Github</span></li>
+                            </ul>
+                        </div>
+                        <!----Experience---->
+                        <div class="tab-contents" id="experience">
+                            <table class="border-separate border-spacing-8 cursor-pointer">
+                                <tr class="border-spacing-2">
+                                    <th>Company</th>
+                                    <th>Position</th>
+                                    <th>Year</th>
+                                </tr>
+                                <tr>
+                                    <td>Ant Creatives, Noida</td>
+                                    <td>Frontend Developer Intern</td>
+                                    <th>Jan2024 - Apr2024</th>
+                                </tr>
+                                <tr>
+                                    <td>CodeCasa</td>
+                                    <td>Web Development and Designing  Intern</td>
+                                    <th>Nov2023 - Dec2023</th>
+                                </tr>
+                                <tr>
+                                    <td>Oasis Infobyte</td>
+                                    <td>Web Development and Designing  Intern</td>
+                                    <th>Aug2023 - Sept2023</th>
+                                </tr>
+                                </table>
+                        </div>
+                        <!----Education---->
+                        <div class="tab-contents" id="education">
+                            <table class="border-separate border-spacing-8 cursor-pointer">
+                                <tr class="border-spacing-2">
+                                    <th>University</th>
+                                    <th>Degree</th>
+                                    <th>Year</th>
+                                </tr>
+                                <tr>
+                                    <td>Maharishi Dayanand University, Rohtak</td>
+                                    <td>Bachelor of Vocational Studies in Software Development</td>
+                                    <th>2022</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------Services----------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="services-list">
+                    <!--list-1-->
+                    <div >
+                        <!--add font icon code-->
+                        <h2>WeddingPe<br>Coromandel Cafe</h2>
+                        <p>Developed 2 websites from scratch for The WeddingPe and Cafe Coromandel using HTML5, CSS3, React.js, JSON,
+                            and Bootstrap, increasing site traffic by 25%.<br>Improved website load time by 30% through optimized code and efficient resource management. </p>
+                        <pre> <a class="font-bold" href="https://weddingpe.com/" target="_blank">LIVE LINK 1</a>     <a class="font-bold" href="https://cafecoromandel.com" target="_blank">LIVE LINK 2</a></pre>
+                    </div>
+                    <!--list-2-->
+                    <div class="bg-image">
+                        <!--add-->
+                        <h2>Rock Paper Scissor Game</h2>
+                       <p>This Rock Paper Scissors game is a fun and interactive project built using React.js and CSS. The game allows users to play the classic game against the computer. With a sleek and responsive design, the user interface is intuitive and visually appealing. The project demonstrates key React.js concepts such as state management, component lifecycle, and event handling, as well as modern CSS techniques for styling and animations. This game not only provides entertainment but also showcases my skills in frontend development and my ability to create dynamic web applications.
+                            </p>
+                        <span class="flex justify-between">
+                        <a class="font-bold" href="https://oshani-code.github.io/OshaniSharma_Rock-Paper-Scissors-Game-2024/" target="_blank">LIVE LINK</a>
+                        <a class="font-bold" href="https://github.com/oshani-code/OshaniSharma_Rock-Paper-Scissors-Game-2024.git" target="_blank">GITHUB LINK</a>
+                    </span>
+                    </div>
+                    <!--list-3-->
+                    <div>
+                        <!--add-->
+                        <h2>Tic-Tac-Toe Game</h2>
+                        <p>Developed a dynamic Tic-Tac-Toe game using HTML, CSS, and JavaScript. This project is compatible across different devices and screen sizes. The game logic, implemented in JavaScript, allows two players to take turns, detect win conditions, and highlight the winning combination. Features include a reset button to start a new game and an intuitive layout for a seamless user experience. The project demonstrates proficiency in front-end development, user interaction handling, and DOM manipulation.</p>
+
+                        <!-- <p>Developed an interactive JavaScript Quiz Game using HTML, CSS, and JavaScript. The project features dynamic question display, score tracking, and result presentation, providing a seamless user experience. This project highlights my skills in front-end development, including user interface design and client-side scripting.</p>
+                         -->
+                        <span class="flex justify-between">
+                        
+                        <a class="font-bold" href="https://prodigy-infotech-y625.vercel.app/" target="_blank">LIVE LINK</a><br>
+                        <a class="font-bold" href="https://github.com/oshani-code/Prodigy_infotech.git" target="_blank">GITHUB LINK</a>
+                    </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!------------portfolio-------------->
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title"></h1>
+                <div class="work-list">
+                    <!--list-1-->
+                    <div class="work">
+                        <img  class="h-full" src="./images/E-commerce.png" alt="E-commerce.img">
+                        <div class="layer">
+                            <h3>E-commerce Website</h3>
+                            <p>Developed a basic e-commerce website using HTML and CSS, featuring an intuitive layout with navigation links and a product grid displaying images, names, prices, and "Add to Cart" buttons. This project highlights my skills in creating structured, visually appealing web pages with a focus on user experience.</p>
+                            <a class="font-bold" href="https://oshani-code.github.io/Main-Flow/E-commerce%20Website/" target="_blank">Link</a>
+                        </div>
+                    </div>
+                    <!--list-2-->
+                    <div class="work">
+                        <img  class="h-full" src="./images/signature.png" alt="signature-app" >
+                        <div class="layer">
+                            <h3>Signature App</h3>
+                            <p>Developed a web-based Signature App using HTML, CSS, and JavaScript. The app allows users to draw, save, download and retrieve saved  digital signatures. Utilized HTML5 Canvas for signature rendering, CSS for responsive design, and JavaScript for handling drawing events and local storage. Demonstrates expertise in front-end development and interactive web applications.</p>
+                            <a href="https://oshani-code.github.io/MERN/signature/" target="_blank">Link</a>
+                        </div>
+                    </div>
+                    <!--list-3-->
+                    <div class="work">
+                        <img
+                            src="images/reg-form.png">
+                        <div class="layer">
+                            <h3>Registration Form</h3>
+                            <p>Built a dynamic registration form using HTML, CSS, and JavaScript. Utilized HTML for structuring form fields, CSS for styling and responsive design, and JavaScript for client-side validation and interactive features. Ensured cross-browser compatibility and user-friendly experience. Demonstrates skills in front-end development and form handling.</p>
+                            <a href="https://oshani-code.github.io/TechnoHacks/">Link</a>
+                        </div>
+                    </div>
+                    <!--list-4 -->
+                     <div class="work">
+                        <img class="h-48" src="./images/tailwind-landingpage.png">
+                        <div class="layer">
+                            <h3>Tailwind Landing Page</h3>
+                            <a href="https://mern-2-11reh6xpy-oshanis-projects-b5513be4.vercel.app/" target="_blank">Link</a>
+                        </div>
+                    </div>
+                    <!-- list-5 -->
+                    <div class="work">
+                        <img class="h-48" src="images/tech-landingpage.png" alt="tech-landingpage">
+                        <div class="layer">
+                            <h3>Tech Landing Page</h3>
+                            <a href="https://prodigy-infotech-kappa.vercel.app/" target="_blank">Link</a>
+                        </div>
+                    </div>
+                    <!-- list-6 -->
+                    <div class="work">
+                        <img  class="h-48" src="images/ToDo-list.png">
+                        <div class="layer">
+                            <h3>ToDo-List</h3>
+                            <a href="https://os-to-do-list-web-app.netlify.app/" target="_blank">Link</a>
+                        </div>
+                    </div> 
+                    <!-- list-4 -->
+                    <div class="work">
+                        <img
+                            src="images/calculator.png" alt="calculator">
+                        <div class="layer">
+                            <h3>calculator</h3>
+                            <p>Developed a basic calculator using HTML, CSS, and JavaScript. The application features a user-friendly interface with buttons for digits and operations, supporting basic functionalities such as addition, subtraction, multiplication, and division. This project demonstrates proficiency in front-end development and the ability to create interactive web applications.</p>
+                            <a href="https://oshani-code.github.io/CODSOFT/" target="_blank">Link</a>
+                        </div>
+                    </div> 
+                    <!-- list-5 -->
+                    <div class="work">
+                        <img class="h-full"
+                            src="images/system.png" alt="calculator">
+                        <div class="layer">
+                            <h3>User Management System</h3>
+                            <p>eveloped a user management system using HTML, CSS, and JavaScript. Features include adding user information with an intuitive interface. This project highlights my skills in creating interactive and functional web applications for managing user data.</p>
+                            <a href="https://oshani-code.github.io/CodeMasters/User%20Management%20System/" target="_blank">Link</a>
+                        </div>
+                    </div> 
+                    <!-- list-6 -->
+                    <div class="work">
+                        <img class="h-full"
+                            src="images/weather-app.png" alt="weather-app">
+                        <div class="layer">
+                            <h3>Weather App</h3>
+                            <p>Developed a weather app using HTML, CSS, and JavaScript. The app provides real-time weather updates with a clean and user-friendly interface. This project demonstrates my ability to integrate APIs and create interactive, data-driven web applications.</p>
+                            <a href="https://prodigy-infotech-au45.vercel.app/" target="_blank">Link</a>
+                        </div>
+                    </div> 
+
+                </div>
+                <a href="#portfolio" class="btn">See more</a>
+            </div>
+        </div>
+        <!--------------Contact---------------->
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left ">
+                        <h1 class="sub-title ">Contact Me</h1>
+                     <div class="flex cursor-pointer">
+                        <p><a href="mailto:ossharma1703@gmail.com" target="_blank"><i class="fa-regular fa-address-book"></i></a></p>
+                        <p><i class="fa-solid fa-square-phone"></i></p>
+                     </div>
+                        <div class="social-icons cursor-pointer">
+                            <a href="https://www.linkedin.com/in/oshanisharma" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://GitHub.com/oshani-code" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                            <br>
+                            <br>
+                            <a href="https://leetcode.com" target="_blank">leetcode</a>
+                            <a href="https://www.geeksforgeeks.com" target="_blank">GFG</a>
+
+                        </div>
+                        <a href= "https://drive.google.com/file/d/1n0fkdQ3D7sz0_fIgl_mgAcz5SsiTBodN/view?usp=sharing"  target="_blank"
+                            class="btn btn2 cursor-pointer">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright @oshni</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/4619b3e12f.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
